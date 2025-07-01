@@ -40,7 +40,7 @@ Where:
 - \( p = \) compensator pole
 - \( z < p \), ensuring phase lead
 
-The app determines \( z \), \( p \), and \( K_c \) such that:
+The app determines Gc(s) = Kc · (s + z) / (s + p) such that:
 - The open-loop system meets the desired **Kv**
 - The closed-loop system meets the desired **Gain Margin (MG)** and **Phase Margin (MF)**
 
