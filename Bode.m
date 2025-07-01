@@ -8,10 +8,10 @@ close all;
 
 %% --- Definição da planta ---
 s = tf('s');
-G = 3 / (s * (s + 2))
-MF=38 %Magem de fase desejada em deg
-MG=10  %Margem de ganho em dB
-KV=41 %s-1
+G = 4 / (s * (s + 10)) %TF
+MF=55 %Magem de fase desejada em deg
+MG=6  %Margem de ganho em dB
+KV=16 %s-1
 %% Satisfazer o requisito da constante de erro estático
 K = KV / (dcgain(s * G))  % dcgain calcula o valor em s → 0
 G1=K*G
